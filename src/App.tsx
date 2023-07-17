@@ -8,7 +8,7 @@ function App() {
   async function ConnectToServer() {
     setServerConnectionStatus('connecting');
     try {
-      await fetch("https://localhost:32816/WeatherForecast");
+      await fetch("https://localhost:32768/WeatherForecast");
       setServerConnectionStatus('connected');
     } catch (error) {
       setServerConnectionStatus(`error: ${error}`);
